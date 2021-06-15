@@ -12,12 +12,12 @@ data "aws_ami" "ec2_instance" {
 
 resource "aws_instance" "aws-ec2" {
   ami = data.aws_ami.ec2_instance.id
-  instance_type = "t2.micro"
-  associate_public_ip_address = true
-  key_name = "devos-tokyo-test-key"
-  vpc_security_group_ids = ["sg-0450393f4cf62361c"]
-  subnet_id="subnet-09be00293d7e87e26"
+  instance_type = var.instance_type
+  associate_public_ip_address = var.assign_ip
+  key_name = var.key_pair
+  vpc_security_group_ids = var.security_groups
+  subnet_id=var.subnet_id
   tags = {
-    Name = "dave-terraform-ec2"
+    Name = var.ec2_name
   }
 }
