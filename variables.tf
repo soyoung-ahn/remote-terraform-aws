@@ -1,6 +1,6 @@
  variable "ec2_name" {
    description = "ec2 instance tag Name"
-   default = "dave-terraform-ec2"
+   default = "demo-terraform-ec2"
  }
 
  variable "subnet_id" {
@@ -16,7 +16,7 @@
 
  variable "key_pair" {
    description = "pem key pair name"
-   default = "devos-tokyo-test-key"
+   default = "devos-bastion-key"
  }
 
  variable "instance_type" {
@@ -27,5 +27,5 @@
  variable "assign_ip" {
    description = "use assign ip"
    type = bool
-   default = false
+   default = true
  }
