@@ -16,7 +16,7 @@
 
  variable "key_pair" {
    description = "pem key pair name"
-   default = "devos-bastion-key"
+   default = "devos-seoul-keypair"
  }
 
  variable "instance_type" {
