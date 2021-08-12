@@ -1,17 +1,17 @@
  variable "ec2_name" {
    description = "ec2 instance tag Name"
-   default = "demo-terraform-ec2"
+   default = "demo-terraform-cloud-ec2"
  }
 
  variable "subnet_id" {
    description = "subnet identity"
-   default = "subnet-09be00293d7e87e26"
+   default = "subnet-0f0d20e44d0cf905a"
  }
 
  variable "security_groups" {
    description = "security group ids"
    type = list(string)
-   default = ["sg-0450393f4cf62361c"]
+   default = ["sg-03c12140254b38dc3"]
  }
 
  variable "key_pair" {
