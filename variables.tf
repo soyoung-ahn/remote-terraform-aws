@@ -1,6 +1,6 @@
  variable "ec2_name" {
    description = "ec2 instance tag Name"
-   default = "demo-terraform-cloud-ec2"
+   default = "demo-external-terraform-ec2"
  }
 
  variable "subnet_id" {
